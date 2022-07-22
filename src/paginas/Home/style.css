@@ -1,0 +1,113 @@
+.secao-banner {
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/public/assets/banner-home.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: rgb(249, 219, 121);
+}
+
+.texto-banner{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 30px;
+}
+
+.texto-banner h1{
+    text-transform: uppercase;
+    font-size: 100px;
+    color: white;
+    text-shadow: 3px 5px #474747;
+}
+
+section{
+    width: 100%;
+    display: flex;
+}
+
+section img{
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+
+.texto-home{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 40px;
+}
+
+.texto-home h2{
+    text-transform: uppercase;
+    font-size: 35px;
+    line-height: 26px;
+    text-align: center;
+}
+
+.texto-home span{
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.texto-home p{
+    padding: 0 100px;
+    line-height: 26px;
+    margin: 40px 0;
+}
+
+@media(max-width:768px){
+    .texto-banner h1{
+        font-size: 60px;
+    }
+
+    .secao-nossos-sabores{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .secao-nossos-sabores img{
+        width: 100%;
+    }
+
+    .texto-home{
+        width: 100%;
+        padding: 100px 10px;
+        text-align: center;
+    }
+
+    .secao-nossos-eventos{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .secao-nossos-eventos img{
+        width: 100%;
+    }
+
+    .secao-sobre-nos{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .secao-sobre-nos img{
+        width: 100%;
+    }
+}
+
+@media(max-width:425px){
+    .texto-banner h1{
+        font-size: 40px;
+    }
+}
